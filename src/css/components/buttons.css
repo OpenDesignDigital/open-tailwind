@@ -1,0 +1,67 @@
+/*
+|--------------------------------------------------
+| Buttons
+|--------------------------------------------------
+*/
+.btn {
+    @apply inline-block w-32 text-center rounded-md p-3 bg-cyan-500 text-white transition-all hover:bg-orange-600 font-medium;
+}
+.book-btn {
+    @apply w-32 text-center rounded-xl p-3 bg-cyan-500 text-white transition-all hover:bg-orange-400;
+}
+header {
+    .book-btn {
+        @apply hidden md:block;
+    }
+}
+.btn-txt {
+    width: max-content;
+    @apply relative pr-6 inline-block underline underline-offset-8;
+    &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/chev_forward.svg");
+        background-repeat: no-repeat;
+        background-size: 10px 15px;
+        background-position: center;
+        width: 15px;
+        height: 15px;
+        right: 0px;
+        top: 6px;
+        @apply transition-all;
+    }
+    &:hover {
+        &:after {
+            right: -10px;
+        }
+    }
+}
+.btn-link {
+    @apply relative w-auto py-2 pl-3 pr-9 inline-block border border-solid border-white text-white cursor-pointer rounded-md;
+    &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/chev_forward.svg");
+        background-repeat: no-repeat;
+        background-size: 10px 15px;
+        background-position: center;
+        filter: invert(100%);
+        width: 15px;
+        height: 15px;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        @apply transition-all;
+    }
+    &:hover {
+        &:after {
+            right: 0.25rem;
+        }
+    }
+    &.dark {
+        @apply border-slate-900 text-slate-900;
+        &:after {
+            filter: invert(0%);
+        }
+    }
+}

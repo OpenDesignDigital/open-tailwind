@@ -1,0 +1,16 @@
+/*
+|--------------------------------------------------
+| CPT Listings
+|--------------------------------------------------
+*/
+.listings {
+    .cpt-item {
+        @apply mb-16;
+        &:last-child {
+            @apply mb-0;
+        }
+        &:nth-child(even) {
+            @apply md:flex-row-reverse;
+        }
+    }
+}

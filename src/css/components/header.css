@@ -1,0 +1,64 @@
+/*
+|--------------------------------------------------
+| Header
+|--------------------------------------------------
+*/
+header {
+    @apply transition-all;
+    .btn {
+        @apply sm:hidden md:block;
+    }
+    &.scrolling {
+        @apply bg-white;
+    }
+}
+.logo {
+    @apply w-40 transition-all;
+    filter: invert(100%);
+}
+.nav-link {
+    @apply block py-2.5 relative z-20;
+    &:after {
+        display: block;
+        content: "";
+        height: 3px;
+        width: 0%;
+        @apply bg-orange-500 absolute bottom-0 left-0;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover,
+    &.nav-link--active {
+        &:after {
+            width: 100%;
+        }
+    }
+    &.is-parent {
+        @apply flex;
+    }
+}
+.dropdown-menu {
+    @apply bg-white absolute top-full -mt-[3px] left-1/2 -translate-x-1/2  w-48 z-10 shadow transition-all duration-300 ease-in-out opacity-0 pointer-events-none text-center space-y-2 p-4  group-hover/navlink:translate-y-0 group-hover/navlink:opacity-100 group-hover/navlink:pointer-events-auto;
+    a {
+        @apply transition-all duration-300 ease-in-out text-stone-800;
+        &:hover {
+            @apply text-orange-500;
+        }
+    }
+}
+.bg-transparent .chev {
+    filter: invert(100%);
+}
+header {
+    &.scrolling {
+        @apply bg-white;
+        .nav-link {
+            @apply text-zinc-700;
+        }
+        .logo {
+            filter: invert(0);
+        }
+        .chev {
+            filter: invert(0);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/*
+|--------------------------------------------------------------------------
+| Vars
+|--------------------------------------------------------------------------
+*/
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/*
+|--------------------------------------------------------------------------
+| Libraries
+|--------------------------------------------------------------------------
+*/
+
+@import "libs/plugins.css";
+@import "libs/swiper.css";
+@import "swiper/modules/effect-fade.min.css";
+@import "swiper/modules/pagination.min.css";
+@import "swiper/modules/navigation.min.css";
+
+/*
+|--------------------------------------------------------------------------
+| Components
+|--------------------------------------------------------------------------
+*/
+
+@import "components/fonts";
+@import "components/layout.css";
+@import "components/type.css";
+@import "components/header.css";
+@import "components/hamburger.css";
+@import "components/hero.css";
+@import "components/footer.css";
+@import "components/buttons.css";
+@import "components/general.css";
+@import "components/forms.css";
+@import "components/tabs.css";
+@import "components/testimonials.css";
+@import "components/socials.css";
+@import "components/cpt-listings.css";
+@import "components/timeline.css";
+
+/*
+|--------------------------------------------------------------------------
+| App
+|--------------------------------------------------------------------------
+*/

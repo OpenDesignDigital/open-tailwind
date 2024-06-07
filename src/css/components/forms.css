@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------
+| Forms
+|--------------------------------------------------
+*/
+.with-form {
+    .nf-before-form-content {
+        .nf-form-fields-required {
+            display: none;
+        }
+    }
+    .nf-form-content {
+        padding: 0;
+        input:not([type="button"]) {
+            @apply bg-transparent border border-solid border-slate-200 rounded-md;
+        }
+        input[type="submit"] {
+            @apply bg-white text-zinc-900 w-40;
+        }
+    }
+    .nf-field-container {
+        @apply mb-2;
+    }
+    .nf-multi-cell .nf-cell {
+        /* padding: 0px; */
+        /* @apply md:px-2.5; */
+    }
+}
+.bg-zinc-900 {
+    .with-form {
+        .nf-form-fields-required {
+            @apply text-slate-200;
+        }
+        p {
+            /* @apply text-xs; */
+        }
+    }
+}
+.bg-neutral-500 {
+    .with-form {
+        .nf-form-fields-required {
+            @apply text-white text-sm;
+        }
+        p {
+            @apply text-white;
+        }
+    }
+}

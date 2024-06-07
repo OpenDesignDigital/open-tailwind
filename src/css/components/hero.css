@@ -1,0 +1,29 @@
+/*
+|--------------------------------------------------
+| Hero
+|--------------------------------------------------
+*/
+#hero {
+    img {
+        /* @apply lg:h-[400px]; */
+    }
+}
+
+.page-template-homepage {
+    #hero {
+        img {
+            /* @apply lg:h-[600px]; */
+        }
+    }
+}
+.page-template-page-builder,
+.page-template-contact,
+.single,
+.blog,
+.category {
+    #hero {
+        img {
+            @apply lg:h-[400px];
+        }
+    }
+}

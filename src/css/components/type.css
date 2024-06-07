@@ -1,0 +1,51 @@
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    @apply text-7xl mb-4 font-semibold;
+}
+h2 {
+    @apply text-4xl mb-4 font-semibold;
+}
+h3 {
+    @apply text-2xl mb-4 font-semibold;
+}
+h4 {
+    @apply text-2xl mb-4 font-semibold;
+}
+h5 {
+    @apply text-xl mb-4 font-semibold;
+}
+h6 {
+    @apply text-lg mb-4 font-semibold;
+}
+p {
+    @apply text-base mb-4 font-light;
+    a {
+        @apply underline;
+    }
+}
+.the-content {
+    ul {
+        @apply list-disc mb-4 ml-4;
+        li {
+            @apply text-base;
+        }
+    }
+    ol {
+        @apply list-decimal mb-4 ml-4;
+        li {
+            @apply text-base;
+        }
+    }
+}
+blockquote {
+    @apply pl-8 border-l-4 border-stone-200 text-base italic ml-0 mb-4;
+    p {
+        @apply mb-0;
+    }
+}
+.the-content {
+}

@@ -1,0 +1,79 @@
+/*
+|--------------------------------------------------
+| General
+|--------------------------------------------------
+*/
+.bg-img {
+    @apply bg-no-repeat bg-center bg-cover;
+}
+.bg-zinc-900 {
+    p {
+        @apply text-white;
+    }
+}
+.gallery-carousel,
+.logo-carousel {
+    &.swiper {
+        @apply pb-16;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 63%;
+    }
+}
+.swiper {
+    .swiper-button-next {
+        background-image: url("../img/arrow_next.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18px;
+    }
+}
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/arrow_prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #999;
+    &:after {
+        content: none;
+    }
+}
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/arrow_next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #999;
+    &:after {
+        content: none;
+    }
+}
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        &.swiper-pagination-bullet-active {
+            background: #000;
+        }
+    }
+}
+.map-box {
+    width: 100%;
+    height: 100%;
+    iframe {
+        width: 100% !important;
+    }
+}
+#mainBody {
+    @apply transition-all opacity-0;
+    &.loaded {
+        @apply opacity-100;
+    }
+}
