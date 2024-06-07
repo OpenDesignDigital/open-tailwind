@@ -15,8 +15,8 @@
  <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-full min-h-80 object-cover"],["alt" => ''], ["loading" => "lazy"] ); ?> 
     </div>
     <div class="flex flex-col w-100 md:w-3/4">
-        <div class="flex flex-col h-full space-y-4 px-8 md:px-0 md:flex-row">
-            <div class="flex flex-col w-2/3 justify-center">
+        <div class="flex flex-col h-full py-8 space-y-4 px-8 md:px-0 md:flex-row md:py-0">
+            <div class="flex flex-col justify-center md:w-2/3">
                 <?php if($bannerTitle){?>
                     <h3 class="text-3xl text-white"><?php echo $bannerTitle; ?></h3>
                 <?php } ?>
@@ -24,7 +24,7 @@
                     <p class="text-lg text-white max-w-2xl"><?php echo $bannerText; ?></p> 
                 <?php } ?>
             </div>
-            <div class="flex flex-col w-1/3 justify-center items-center">
+            <div class="flex flex-col  justify-center items-center md:w-1/3">
                 <?php if( get_field('banner_cta', 'options') ): ?> 
                     <?php
                         $link = get_field('banner_cta', 'options');

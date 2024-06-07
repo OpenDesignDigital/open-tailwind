@@ -16,6 +16,7 @@
 
 @import "libs/plugins.css";
 @import "libs/swiper.css";
+@import "libs/accordion.css";
 @import "swiper/modules/effect-fade.min.css";
 @import "swiper/modules/pagination.min.css";
 @import "swiper/modules/navigation.min.css";
@@ -41,6 +42,7 @@
 @import "components/socials.css";
 @import "components/cpt-listings.css";
 @import "components/timeline.css";
+@import "components/illustrations.css";
 
 /*
 |--------------------------------------------------------------------------

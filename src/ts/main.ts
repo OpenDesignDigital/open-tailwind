@@ -6,6 +6,7 @@ import "../css/main.css";
 import "./swiper_configs";
 import "./custom_tabs";
 import "./page_load.js";
+import Accordion from "accordion-js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const $btn = document.getElementById("menu-btn");
@@ -59,4 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
         target.classList.add("opacity-0");
         observer.observe(target);
     });
+
+    //Activate Accordions
+    const checkAccordion = document.querySelector(".accordion-container");
+    if (checkAccordion) {
+        new Accordion(".accordion-container");
+    }
 });

@@ -2,7 +2,7 @@
             <div class="flex flex-col md:flex-row md:justify-between">
             <?php $legalNav = wp_get_menu_array('legal'); ?>
             <?php if($legalNav): ?>
-            <ul class="flex flex-col md:flex-row gap-6">
+            <ul class="flex flex-col md:flex-row md:gap-6">
                 <?php foreach($legalNav as $link): ?>
                 <li class="transition-all text-white text-base hover:text-orange-600">
                     <a href="<?= $link['url']; ?>"><?= $link['title']; ?></a>

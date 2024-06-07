@@ -4,8 +4,11 @@
     $title = get_sub_field('title');
     $paddingTop = get_sub_field('add_padding_top');
     $imageId = isset(get_sub_field('image')["id"]) ? get_sub_field('image')["id"] : null;
+    $illImage = isset(get_sub_field('illustrated_image')["id"]) ? get_sub_field('illustrated_image')["id"] : null;
+    $positionX = get_sub_field('illustrated_image_x_position');
+    $positionY = get_sub_field('illustrated_image_y_position');
 ?>
-<section class="image-text-cta pb-16 <?php if($paddingTop) { ?>pt-16<?php } ?>">
+<section class="image-text-cta pb-16 relative <?php if($paddingTop) { ?>pt-16<?php } ?>">
     <div class="container mx-auto flex flex-col md:flex-row gap-12 justify-between <?php echo $alternate; ?> js-show-on-scroll">
         <?php if($imageId) { ?>
             <div class="w-full md:w-1/2">
@@ -37,4 +40,7 @@
                 <?php endif; ?>
         </div>
     </div>
+    <?php if($illImage) { ?>
+        <div class="ill-img absolute bg-img z-10 js-show-on-scroll" style="background-image:url('<?php echo wp_get_attachment_url($illImage); ?>'); left:<?php echo $positionX; ?>%; top:<?php echo $positionY; ?>%"></div>
+    <?php }?>  
 </section>

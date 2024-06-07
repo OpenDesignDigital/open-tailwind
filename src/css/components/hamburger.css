@@ -34,3 +34,10 @@
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+.scrolling {
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        @apply bg-black;
+    }
+}

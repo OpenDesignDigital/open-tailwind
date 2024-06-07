@@ -30,7 +30,8 @@ function setup() {
         'mobile_navigation' => "Mobile Navigation",
         'footer_linklist_1' => "Footer Link list 1",
         'footer_linklist_2' => "Footer Link list 2",
-        'footer_linklist_3' => "Footer Link list 3"
+        'footer_linklist_3' => "Footer Link list 3",
+        'legal' => "Legal"
     ));
 
     /*
