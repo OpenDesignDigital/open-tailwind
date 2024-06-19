@@ -40,7 +40,7 @@ $logo =  get_field("logo", "options");
 <!-- Mobile Menu -->
 <div
     id="menu"
-    class="fixed top-0 bottom-0 left-0 hidden flex-col self-end w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black z-40"
+    class="fixed top-0 bottom-0 left-0 hidden flex-col self-end w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black z-40 mob-menu overflow-y-scroll"
     >
     <?= partial("_mobile_navigation"); ?>
 </div>

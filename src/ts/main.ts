@@ -6,6 +6,7 @@ import "../css/main.css";
 import "./swiper_configs";
 import "./custom_tabs";
 import "./page_load.js";
+import "./nav_show_hide.js";
 import Accordion from "accordion-js";
 
 document.addEventListener("DOMContentLoaded", () => {

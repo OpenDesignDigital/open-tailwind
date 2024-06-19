@@ -1,0 +1,37 @@
+.mob-menu {
+    .menu-item-has-children {
+        position: relative;
+        /* @apply text-3xl; */
+        width: auto;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .nav-link:after {
+        content: none;
+    }
+    .toggle_child {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        width: 25px;
+        height: 25px;
+        img {
+            filter: invert(1);
+            &.no-invert {
+                filter: invert(0);
+            }
+        }
+    }
+    .mob-sub {
+        @apply hidden mt-4;
+        li {
+            /* @apply text-2xl; */
+        }
+    }
+    .show_children {
+        .mob-sub {
+            @apply block;
+        }
+    }
+}
