@@ -18,7 +18,7 @@
         $imageId = get_sub_field('image')["id"]; 
         $size = 'post-thumbs';
     ?>
-    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto aspect-auto mb-2"],["alt" => ''], ["loading" => "lazy"] ); ?>    
+    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto  mb-2"],["alt" => ''], ["loading" => "lazy"] ); ?>    
         <?php if ($title) { ?>
             <h3 class="px-8 md:px-0"><?php echo $title; ?></h3>
         <?php } ?>

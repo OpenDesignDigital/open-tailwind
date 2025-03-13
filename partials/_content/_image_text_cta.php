@@ -15,7 +15,7 @@
                 <?php 
                     $size = 'post-thumbs';
                 ?>
-                <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto aspect-auto"],["alt" => ''], ["loading" => "lazy"] ); ?> 
+                <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto "],["alt" => ''], ["loading" => "lazy"] ); ?> 
             </div>
         <?php } ?>
         <div class="w-full md:w-1/2 flex flex-col space-y-2 justify-center px-6 md:px-0">

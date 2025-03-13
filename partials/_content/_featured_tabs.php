@@ -38,7 +38,7 @@
                     $imageId = get_sub_field('tab_image')["id"]; 
                     $size = 'post-thumbs';
                     ?>
-                    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto aspect-auto relative z-10"],["alt" => ''], ["loading" => "lazy"] ); ?> 
+                    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto  relative z-10"],["alt" => ''], ["loading" => "lazy"] ); ?> 
                 </div>
 
                                                                                         <!-- Panel Content -->

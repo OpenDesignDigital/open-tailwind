@@ -18,7 +18,7 @@
         $imageId = get_sub_field('icon')["id"]; 
         $size = 'small';
     ?>
-    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-16 h-auto aspect-auto mb-2"],["alt" => ''], ["loading" => "lazy"] ); ?>    
+    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-16 h-auto mb-2"],["alt" => ''], ["loading" => "lazy"] ); ?>    
         <?php if ($title) { ?>
             <h3 class="md:px-0"><?php echo $title; ?></h3>
         <?php } ?>

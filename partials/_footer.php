@@ -63,6 +63,8 @@ $altLogo =  get_field("logo_alt", "options");
                     $xTwitter = get_field('xtwitter', 'options');
                     $instagram = get_field('instagram', 'options');
                     $pinterest = get_field('pinterest', 'options');
+                    $tiktok = get_field('tiktok', 'options');
+                    $youtube = get_field('youtube', 'options');
                   ?>
                   <?php if ($facebook) {?>
                   <a href="<?php echo $facebook; ?>" class="block w-8 h-8">
@@ -71,7 +73,7 @@ $altLogo =  get_field("logo_alt", "options");
                   <?php } ?>
                   <?php if ($xTwitter) {?>
                   <a href="<?php echo $xTwitter; ?>" class="block w-8 h-8">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/dist/img/icon-twitter.svg" alt="X" class="ficon w-full" />
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/dist/img/twitterx.svg" alt="X" class="ficon w-full" />
                   </a>
                   <?php } ?>
                   <?php if($instagram) {?>
@@ -79,9 +81,14 @@ $altLogo =  get_field("logo_alt", "options");
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/dist/img/icon-instagram.svg" alt="Instagram Icon" class="ficon w-full" />
                   </a>
                   <?php } ?>
-                  <?php if($pinterest) {?>
+                  <?php if($tiktok) {?>
+                  <a href="<?php echo $tiktok; ?>" class="block w-8 h-full">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/dist/img/icon-tiktok.svg" alt="Tiktok Icon" class="ficon w-full h-full block" />
+                  </a>
+                  <?php } ?>
+                  <?php if($youtube) {?>
                   <a href="<?php echo $youtube; ?>" class="block w-8 h-full">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/dist/img/icon-pinterest.svg" alt="Pinterest Icon" class="ficon w-full h-full block" />
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/dist/img/icon-youtube.svg" alt="YouTube Icon" class="ficon w-full h-full block" />
                   </a>
                   <?php } ?>
                 </div>

@@ -7,7 +7,7 @@ $logo =  get_field("logo", "options");
     if (isset($logo)) {
     ?>
         <div>
-            <a href="<?= esc_url(home_url('/')); ?>">
+            <a href="<?= esc_url(home_url('/')); ?>" aria-label="Site logo - Go to homepage">
             <?php
                 $imageId = $logo["id"];
                 $size = 'large'; // (thumbnail, medium, large, full .etc)
@@ -19,7 +19,7 @@ $logo =  get_field("logo", "options");
         <?php
     }
     ?>
-        <nav class="hidden lg:flex">
+        <nav class="hidden lg:flex" aria-label="Main">
             <?= partial("_main_navigation"); ?>
         </nav>
         <a id="book" class="book-btn" href="#Book">Book Now</a>
@@ -28,6 +28,7 @@ $logo =  get_field("logo", "options");
               id="menu-btn"
               type="button"
               class="z-40 hamburger inline-block w-[24px] h-[24px] md:hidden focus:outline-none"
+              aria-label="Toggle the mobile navigation" aria-expanded="false"
             >
               <span class="hamburger-top"></span>
               <span class="hamburger-middle"></span>

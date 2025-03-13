@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menuItem.insertAdjacentHTML(
             `beforeend`,
-            `<button class="toggle_child"><img src="/wp-content/themes/open-tailwind/assets/dist/img/Chevron_Down.svg"/>
+            `<button class="toggle_child"><img src="/wp-content/themes/open-tailwind/assets/dist/img/Chevron_Down.svg" alt="Sub menu closed" aria-label="Sub menu closed" />
         </button>`,
         );
 
@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (menuItem.classList.contains(`show_children`)) {
                 menuItem.classList.remove("show_children");
                 menuItem.querySelector(`.toggle_child`).innerHTML =
-                    `<img src="/wp-content/themes/open-tailwind/assets/dist/img/Chevron_Down.svg"/>
+                    `<img src="/wp-content/themes/open-tailwind/assets/dist/img/Chevron_Down.svg" alt="Sub menu closed" aria-label="Sub menu closed"/>
           `;
             } else {
                 menuItem.classList.add("show_children");
                 menuItem.querySelector(`.toggle_child`).innerHTML =
-                    `<img class="no-invert" src="/wp-content/themes/open-tailwind/assets/dist/img/Chevron_Up_White.svg"/>
+                    `<img class="no-invert" src="/wp-content/themes/open-tailwind/assets/dist/img/Chevron_Up_White.svg" alt="Sub menu open" aria-label="Sub menu open"/>
           `;
             }
         }

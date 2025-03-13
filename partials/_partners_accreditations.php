@@ -7,7 +7,7 @@
                 $imageId = get_sub_field('logo')["id"]; 
                 $size = 'post-thumbs';
             ?>
-            <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto aspect-auto mb-2"],["alt" => ''], ["loading" => "lazy"] ); ?>    
+            <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto  mb-2"],["alt" => ''], ["loading" => "lazy"] ); ?>    
             </div>
           <?php $count++; endwhile; ?>
         <?php endif; ?>  

@@ -21,14 +21,14 @@
                 $imageId = isset(get_sub_field('image')["id"]) ? get_sub_field('image')["id"] : null;
 
             ?>
-            <div class="flex flex-col flex-row gap-12 justify-between relative milestone md:flex-row md:gap-24">
+            <div class="flex flex-col md:flex-row gap-12 justify-between relative milestone md:flex-row md:gap-24">
                 <div class="absolute bar top-o h-full w-1 left-2/4 -translate-x-2/4 bg-black is-line z-10"></div>
                 <?php if($imageId) { ?>
                 <div class="w-full md:w-1/2 img-col">
                     <?php 
                         $size = 'post-thumbs';
                     ?>
-                    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto aspect-auto"],["alt" => ''], ["loading" => "lazy"] ); ?> 
+                    <?php echo wp_get_attachment_image($imageId, $size, "",["class" =>"w-full h-auto "],["alt" => ''], ["loading" => "lazy"] ); ?> 
                 </div>
                 <?php } ?>
                 <div class="w-full md:w-1/2 flex flex-col space-y-2 px-6 md:px-0 pt-12 text-col">

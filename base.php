@@ -3,11 +3,12 @@ use Hustle\Setup;
 use Hustle\Wrapper;
 ?>
 <!doctype html>
-<html class="no-js" <?php language_attributes(); ?>>
+<html class="no-js scroll-smooth" <?php language_attributes(); ?>>
     <?= partial("_head"); ?>
 
     <body <?php body_class(); ?>>
         <main class="min-h-screen flex flex-col">
+        <a class="screen-reader-text skip-link" href="#Main">Skip to content</a>
             <?= partial("_header"); ?>
 
             <?php /*
@@ -20,7 +21,7 @@ use Hustle\Wrapper;
                 - etc
             */ ?>
 
-            <div class="flex-1">
+            <div class="flex-1" id="Main">
                 <?php include Wrapper\template_path(); ?>
             </div>
 
